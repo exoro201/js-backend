@@ -23,8 +23,11 @@ window.addEventListener('DOMContentLoaded', () =>{
     const inputBody = form[1];
 
 
+    form.addEventListener('submit', onFormSubmit);
 
-
+    function onFormSubmit( e ) {
+    e.preventDefault();
+    }
 
 
 
